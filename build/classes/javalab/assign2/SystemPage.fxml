@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javalab.assign2.SystemPageController">
+   <children>
+      <BorderPane prefHeight="421.0" prefWidth="517.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="76.0" prefWidth="511.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="52.0" prefWidth="362.0" text="Currency Convertion System" textFill="#0a0043">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="logoutBtn" alignment="CENTER" mnemonicParsing="false" onAction="#logoutBtnHandle" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #DD9946;" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <center>
+            <HBox alignment="CENTER" prefHeight="274.0" prefWidth="497.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="325.0" prefWidth="160.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="usdLabel" alignment="CENTER" prefHeight="42.0" prefWidth="79.0" text="USD" textFill="#0a0043">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="usdtxt" onAction="#usdtxtHandle" prefHeight="27.0" prefWidth="129.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_RIGHT" prefHeight="325.0" prefWidth="160.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="invalidInput" alignment="CENTER" prefHeight="48.0" prefWidth="153.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <VBox alignment="TOP_CENTER" prefHeight="163.0" prefWidth="140.0" spacing="50.0">
+                           <children>
+                              <Label fx:id="toLabel" alignment="CENTER" prefHeight="42.0" prefWidth="79.0" text="TO" textFill="#0a0043">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="convertLabel" mnemonicParsing="false" onAction="#convertLabelHandle" prefHeight="47.0" prefWidth="109.0" style="-fx-background-color: #0a0043;" text="Convert" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="325.0" prefWidth="160.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="nisLabel" alignment="CENTER" prefHeight="42.0" prefWidth="79.0" text="NIS" textFill="#0a0043">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nistxt" onAction="#nistxtHandle" prefHeight="27.0" prefWidth="129.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</FlowPane>
